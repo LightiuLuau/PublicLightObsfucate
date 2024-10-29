@@ -1,0 +1,54 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/DenDenZZZ/Kavo-UI-Library/main/Kavo.lua"))()
+
+local Window = Library.CreateLib("BETA SCRIPT v0.4                                                                                      Destroy Gui   >  ", "DarkTheme")
+
+local Tab = Window:NewTab("Rizzler Scripts")
+
+local Section = Tab:NewSection("FE Scripts")
+
+Section:NewButton("Infinite Yield", "Many commands", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Section:NewButton("FE Emotes", "SpamV2", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/eCpipCTH'))()
+end)
+
+Section:NewButton("AFEM FE Emotes", "SpamV3", function()
+    loadstring(game:HttpGet('https://rawscripts.net/raw/Universal-Script-AFEM-14048'))()
+end)
+
+Section:NewButton("FE Fast Side By Side", "FE Illusion", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_11l7Y131YqJjZ31QmV5L8pI23V02b3191sEg26E75472Wl78Vi8870jRv5txZyL1.lua.txt'))()
+end)
+
+Section:NewButton("Keyboard script", "press the + and choose letter to show in your screen", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))()
+end)
+
+Section:NewButton("Soon more script", "Soon", function()
+end)
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(1, 1, 21)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0, 90, 0.0002, 38)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "Close/Open"
+Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
+Toggle.TextSize = 21.000
+Toggle.Draggable = true
+Toggle.MouseButton1Click:Connect(function()
+    Library:ToggleUI()
+end)
+
+local Corner = Instance.new("UICorner")
+Corner.Name = "Corner"
+Corner.Parent = Toggle
