@@ -1,0 +1,94 @@
+--- This file was protected with Lance and the UC Team!
+Why are you here? Trying to reverse/steal my script? Lol!
+
+local v0 = string.char;
+local v1 = string.byte;
+local v2 = string.sub;
+local v3 = bit32 or bit;
+local v4 = v3.bxor;
+local v5 = table.concat;
+local v6 = table.insert;
+local function v7(v27, v28)
+	local v29 = {};
+	for v30 = 1, #v27 do
+		v6(v29, v0(v4(v1(v2(v27, v30, v30 + 1)), v1(v2(v28, 1 + (v30 % #v28), 1 + (v30 % #v28) + 1))) % 256));
+	end
+	return v5(v29);
+end
+local v8 = Instance.new(v7("\226\192\201\32\227\181\224\11\216", "\126\177\163\187\69\134\219\167"));
+v8.Name = v7("\16\206\56\192\249\45\234\63\204", "\156\67\173\74\165");
+v8.Parent = game.Players.LocalPlayer:WaitForChild(v7("\4\187\72\15\185\52\97\33\190", "\38\84\215\41\118\220\70"));
+v8.ResetOnSpawn = false;
+local v12 = Instance.new(v7("\100\19\58\6\220\69\2\54\29\240", "\158\48\118\66\114"));
+v12.Name = v7("\159\43\23\49\127\160", "\155\203\68\112\86\19\197");
+v12.Parent = v8;
+v12.BackgroundColor3 = Color3.fromRGB(2 - 1, 1, 49 - 28);
+v12.Position = UDim2.new(0, 0, 0.454706937 - 0, 0 - 0);
+v12.Size = UDim2.new(0, 90, 350.1 - (87 + 263), 38);
+v12.Font = Enum.Font.SourceSans;
+v12.Text = v7("\101\209\57\239\69\55\202\232\67\211", "\152\38\189\86\156\32\24\133");
+v12.TextColor3 = Color3.fromRGB(428 - (67 + 113), 182 + 66, 608 - 360);
+v12.TextSize = 21;
+v12.Draggable = true;
+v12.MouseButton1Click:Connect(function()
+	Library:ToggleUI();
+end);
+local v24 = Instance.new(v7("\201\126\132\73\238\89\162\84", "\38\156\55\199"));
+v24.Name = v7("\139\114\110\38\22\102", "\35\200\29\28\72\115\20\154");
+v24.Parent = v12;
+
+Section:NewButton("Infinite Yield", "Many commands", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Section:NewButton("FE Emotes", "SpamV2", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/eCpipCTH'))()
+end)
+
+Section:NewButton("AFEM FE Emotes", "SpamV3", function()
+    loadstring(game:HttpGet('https://rawscripts.net/raw/Universal-Script-AFEM-14048'))()
+end)
+
+Section:NewButton("FE Fast Side By Side", "FE Illusion", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe/main/obf_11l7Y131YqJjZ31QmV5L8pI23V02b3191sEg26E75472Wl78Vi8870jRv5txZyL1.lua.txt'))()
+end)
+
+Section:NewButton("Soon more script", "Soon", function()
+    print("Clicked")
+end)
+
+local a = 16164 + (((3864 + 364101) - 274396) - 67600) + (190952 - 110638);
+a = a + (113 - (26 + 67)) + (1219 - (119 + 997));
+local b = 1203456;
+local c = 1230471;
+local d = 8023481;
+if (c > b) then
+	print("true");
+end
+if ((1 + d) > c) then
+	print("obfuscate the conditions!");
+end
+print("Clicking [Strings] will completely hide this string!");
+do
+	function sieve_of_eratosthenes(n)
+		local is_prime = {};
+		for i = 1, n do
+			is_prime[i] = 1 ~= i;
+		end
+		for i = 2, math.floor(math.sqrt(n)) do
+			if is_prime[i] then
+				for j = i * i, n, i do
+					is_prime[j] = false;
+				end
+			end
+		end
+		return is_prime;
+	end
+	local primes = sieve_of_eratosthenes(420);
+	for key, value in pairs(primes) do
+		if value then
+			print("Prime found: " .. key);
+		end
+	end
+end
+print("How to obfuscate best?");
